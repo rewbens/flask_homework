@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+
+    <body>
+        <h1>Shop order</h1>
+        {% for order in orders %}
+        
+        <div>
+            <b><a href="/orders/{{loop.index0}}">{{order.customer_name}}</a></b>
+
+        </div>
+
+        {% endfor %}
+    </body>
+</html>
